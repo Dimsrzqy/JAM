@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jam dimas</title>
+  </head>
+  <body style="background-color: #242424; color: #f4f5e2; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 900; font-size: 10vh; text-align: center; padding-top: 40vh">
+    <div id="clock"></div>
+    <script>
+      setInterval(() => {
+        let date = new Date();
+        let clock = document.getElementById("clock");
+        clock.innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+      }, 100);
+    </script>
+  </body>
+</html>
